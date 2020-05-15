@@ -1,0 +1,67 @@
+@import "./reset.scss";
+@import "./mixin.scss";
+@import "./commen.scss";
+
+
+#joinus{
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .join-head{
+    width: 100%;
+    overflow: hidden;
+    background-color: #2F4FF0;
+    padding:22px 15px 0;
+  }
+  .join-logo{
+    width: 183px;
+    height: 183px;
+    margin: 16px auto 10px;
+    img{
+      @include img100;
+    }
+  }
+  .join-title{
+    width: 108px;
+    height: 17px;
+    margin: 0 auto 20px;
+    img{
+      @include img100;
+    }
+  }
+}
+.join-des{
+  width: 100%;
+  // overflow: hidden;
+  padding: 20px 15px 0;
+  .margintext{
+    margin-top: 18px;
+  }
+}
+
+#join-apply{
+  width: 100%;
+  overflow: hidden;
+  padding:20px 0 30px;
+  .joininput{
+    display: block;
+    width: 80%;
+    height: 44px;
+    margin: 22px auto 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 22px;
+  }
+  input.joininput{
+    color: #050505;
+    background-color: #E6E6E6;
+    &::placeholder{
+      color: #050505;
+    }
+  }
+  button.joininput{
+    color: #FFFFFF;
+    background-color: #2F4FF0;
+  }
+}
